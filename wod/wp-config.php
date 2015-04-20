@@ -19,13 +19,13 @@
 define('DB_NAME', 'mobiusWod');
 
 /** Tu nombre de usuario de MySQL */
-define('DB_USER', 'mobiusWod');
+define('DB_USER', 'root');
 
 /** Tu contraseña de MySQL */
-define('DB_PASSWORD', 'Crossfit@15-');
+define('DB_PASSWORD', 'WccyKg4pDQ');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
-define('DB_HOST', 'mobiusWod.db.13588947.hostedresource.com');
+define('DB_HOST', 'localhost');
 
 /** Codificación de caracteres para la base de datos. */
 define('DB_CHARSET', 'utf8');
