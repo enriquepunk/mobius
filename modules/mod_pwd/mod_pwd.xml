@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>MOD_PWD</name>
+    <author>Viktor Vogel</author>
+    <creationDate>24-Sep-2012</creationDate>
+    <copyright>This module its released under GPL/GNU License</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>admin@kubik-rubik.de</authorEmail>
+    <authorUrl>http://www.kubik-rubik.de</authorUrl>
+    <version>2.5-3</version>
+    <description>MOD_PWD_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_pwd">mod_pwd.php</filename>
+        <filename module="mod_pwd">helper.php</filename>
+        <filename module="mod_pwd">index.html</filename>
+        <filename module="mod_pwd">tmpl/default.php</filename>
+        <filename module="mod_pwd">tmpl/index.html</filename>
+        <folder plugin="mod_pwd">fields</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_pwd.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_pwd.sys.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.mod_pwd.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.mod_pwd.sys.ini</language>
+        <language tag="it-IT">language/it-IT/it-IT.mod_pwd.ini</language>
+        <language tag="it-IT">language/it-IT/it-IT.mod_pwd.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params" addfieldpath="/modules/mod_pwd/fields">
+            <fieldset name="basic">
+                <field type="krdonationcodecheck" />
+                <field type="krversioncheck" name="krversioncheck" default="pwd|2.5-3" />
+                <field name="copy" type="radio" default="1" label="MOD_PWD_POWEREDBY" description="MOD_PWD_POWEREDBYDESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+            <fieldset name="donation">
+                <field name="donation_code" type="text" default="" size="40" label="KR_DONATION_CODE" description="KR_DONATION_CODEDESC" />
+            </fieldset>
+            <fieldset name="versioncheck">
+                <field name="versioncheck_enable" type="list" default="1" label="KR_VERSION_CHECK" description="KR_VERSION_CHECKDESC">
+                    <option value="1">KR_VERSION_CHECK_ONCESESSION</option>
+                    <option value="2">KR_VERSION_CHECK_ONEVERYLOAD</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

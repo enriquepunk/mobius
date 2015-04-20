@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>MOD_TROMBINOSCOPE</name>
+	<author>Olivier Buisard</author>
+	<creationDate>August 2011</creationDate>
+	<copyright>Copyright (C) 2011 Simplify Your Web. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail>olivier.buisard@simplifyyourweb.com</authorEmail>
+	<authorUrl>www.simplifyyourweb.com</authorUrl>
+	<version>1.1.4</version>
+	<description>MOD_TROMBINOSCOPE_XML_DESCRIPTION</description>
+	<scriptfile>installer.php</scriptfile>
+	<files>
+		<filename module="mod_trombinoscope">mod_trombinoscope.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>license.txt</filename>
+		<filename>style.css.php</filename>
+		<folder>images</folder>
+		<folder>fields</folder>
+		<folder>tmpl</folder>
+	</files>	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_trombinoscope.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_trombinoscope.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.mod_trombinoscope.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.mod_trombinoscope.sys.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.mod_trombinoscope.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.mod_trombinoscope.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_trombinoscope/fields">
+			<fieldset name="basic" addfieldpath="/libraries/syw/fields">
+				<field name="selection" type="list" default="categories" 
+					label="MOD_TROMBINOSCOPE_FIELD_SELECTION_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_SELECTION_DESC">					
+					<option value="categories">MOD_TROMBINOSCOPE_VALUE_CATEGORIES</option>
+					<option value="contact">MOD_TROMBINOSCOPE_VALUE_CONTACT</option>
+					<option value="user">MOD_TROMBINOSCOPE_VALUE_USER</option>
+				</field>
+				<field name="contact_id" type="contact" default="" 
+					label="MOD_TROMBINOSCOPE_FIELD_CONTACT_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_CONTACT_DESC" />
+				<field name="category" type="category" extension="com_contact" multiple="true" size="5" default="all" 
+					label="MOD_TROMBINOSCOPE_FIELD_CATEGORY_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_CATEGORY_DESC">
+					<option value="all">JOPTION_ALL_CATEGORIES</option>
+				</field>												
+                <field name="includesubcategories" type="list" default="no" 
+					label="MOD_TROMBINOSCOPE_FIELD_INCLUDESUBCATEGORIES_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_INCLUDESUBCATEGORIES_DESC">					
+					<option value="no">JNO</option>
+					<option value="onelevel">MOD_TROMBINOSCOPE_VALUE_ONELEVEL</option>
+					<option value="all">MOD_TROMBINOSCOPE_VALUE_ALLLEVELS</option>
+				</field>
+				<field name="count" type="text" default="" 
+					label="MOD_TROMBINOSCOPE_FIELD_COUNT_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_COUNT_DESC" />
+				<field name="photo_align" type="list" default="left" 
+					label="MOD_TROMBINOSCOPE_FIELD_ALIGNMENT_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_ALIGNMENT_DESC">
+					<option value="left">MOD_TROMBINOSCOPE_VALUE_ALIGNLEFT</option>
+					<option value="right">MOD_TROMBINOSCOPE_VALUE_ALIGNRIGHT</option>
+					<option value="alternate">MOD_TROMBINOSCOPE_VALUE_ALTERNATE</option>
+				</field>
+				<field name="cat_order" type="list" default="" 
+					label="MOD_TROMBINOSCOPE_FIELD_CATORDER_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_CATORDER_DESC">	
+					<option value="">MOD_TROMBINOSCOPE_VALUE_NONE</option>				
+					<option value="cc.lft ASC">MOD_TROMBINOSCOPE_VALUE_BYORDER_ASC</option>
+					<option value="cc.lft DESC">MOD_TROMBINOSCOPE_VALUE_BYORDER_DESC</option>
+				</field>
+				<field name="order" type="list" default="cd.ordering ASC" 
+					label="MOD_TROMBINOSCOPE_FIELD_ORDER_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_ORDER_DESC">					
+					<option value="cd.ordering ASC">MOD_TROMBINOSCOPE_VALUE_BYORDER_ASC</option>
+					<option value="cd.ordering DESC">MOD_TROMBINOSCOPE_VALUE_BYORDER_DESC</option>
+					<option value="cd.name ASC">MOD_TROMBINOSCOPE_VALUE_BYNAME_ASC</option>
+					<option value="cd.name DESC">MOD_TROMBINOSCOPE_VALUE_BYNAME_DESC</option>
+					<option value="sna">MOD_TROMBINOSCOPE_VALUE_BYSORTNAME_ASC</option>
+					<option value="snd">MOD_TROMBINOSCOPE_VALUE_BYSORTNAME_DESC</option>
+					<option value="lastpart ASC,firstpart ASC">MOD_TROMBINOSCOPE_VALUE_BYLASTNAMEFIRSTNAME_ASC</option>
+					<option value="lastpart DESC,firstpart DESC">MOD_TROMBINOSCOPE_VALUE_BYLASTNAMEFIRSTNAME_DESC</option>
+					<option value="firstpart ASC,lastpart ASC">MOD_TROMBINOSCOPE_VALUE_BYFIRSTNAMELASTNAME_ASC</option>	
+					<option value="firstpart DESC,lastpart DESC">MOD_TROMBINOSCOPE_VALUE_BYFIRSTNAMELASTNAME_DESC</option>		
+				</field>
+				<field name="name_format" type="list" default="name" 
+					label="MOD_TROMBINOSCOPE_FIELD_NAMEFORMAT_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_NAMEFORMAT_DESC">					
+					<option value="name">MOD_TROMBINOSCOPE_VALUE_FORMAT_NAME</option>
+					<option value="lastspacefirst">MOD_TROMBINOSCOPE_VALUE_FORMAT_LASTSPACEFIRST</option>
+					<option value="firstspacelast">MOD_TROMBINOSCOPE_VALUE_FORMAT_FIRSTSPACELAST</option>
+					<option value="lastcomafirst">MOD_TROMBINOSCOPE_VALUE_FORMAT_LASTCOMAFIRST</option>
+					<option value="firstcomalast">MOD_TROMBINOSCOPE_VALUE_FORMAT_FIRSTCOMALAST</option>
+				</field>
+				<field name="default_picture" type="media" default=""
+					label="MOD_TROMBINOSCOPE_FIELD_PICTURE_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_PICTURE_DESC" />
+				<field name="field1" type="list" default="none" 
+					label="MOD_TROMBINOSCOPE_FIELD_FIELD1_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_FIELD1_DESC">
+					<option value="none">MOD_TROMBINOSCOPE_VALUE_NONE</option>
+					<option value="empty">MOD_TROMBINOSCOPE_VALUE_EMPTY</option>
+					<option value="cd.con_position">MOD_TROMBINOSCOPE_VALUE_POSITION</option>
+					<option value="cd.telephone">MOD_TROMBINOSCOPE_VALUE_TELEPHONE</option>
+					<option value="cd.mobile">MOD_TROMBINOSCOPE_VALUE_MOBILE</option>
+					<option value="cd.fax">MOD_TROMBINOSCOPE_VALUE_FAX</option>
+					<option value="cd.email_to">MOD_TROMBINOSCOPE_VALUE_EMAIL</option>
+					<option value="cd.webpage">MOD_TROMBINOSCOPE_VALUE_WEBPAGE</option>
+					<option value="cd.address">MOD_TROMBINOSCOPE_VALUE_ADDRESS</option>
+					<option value="cd.suburb">MOD_TROMBINOSCOPE_VALUE_SUBURB</option>
+					<option value="cd.state">MOD_TROMBINOSCOPE_VALUE_STATE</option>
+					<option value="formattedaddress">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS</option>
+					<option value="cd.country">MOD_TROMBINOSCOPE_VALUE_COUNTRY</option>
+					<option value="cd.misc">MOD_TROMBINOSCOPE_VALUE_MISC</option>
+				</field>
+				<field name="field2" type="list" default="none" 
+					label="MOD_TROMBINOSCOPE_FIELD_FIELD2_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_FIELD2_DESC">
+					<option value="none">MOD_TROMBINOSCOPE_VALUE_NONE</option>
+					<option value="empty">MOD_TROMBINOSCOPE_VALUE_EMPTY</option>
+					<option value="cd.con_position">MOD_TROMBINOSCOPE_VALUE_POSITION</option>
+					<option value="cd.telephone">MOD_TROMBINOSCOPE_VALUE_TELEPHONE</option>
+					<option value="cd.mobile">MOD_TROMBINOSCOPE_VALUE_MOBILE</option>
+					<option value="cd.fax">MOD_TROMBINOSCOPE_VALUE_FAX</option>
+					<option value="cd.email_to">MOD_TROMBINOSCOPE_VALUE_EMAIL</option>
+					<option value="cd.webpage">MOD_TROMBINOSCOPE_VALUE_WEBPAGE</option>
+					<option value="cd.address">MOD_TROMBINOSCOPE_VALUE_ADDRESS</option>
+					<option value="cd.suburb">MOD_TROMBINOSCOPE_VALUE_SUBURB</option>
+					<option value="cd.state">MOD_TROMBINOSCOPE_VALUE_STATE</option>
+					<option value="formattedaddress">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS</option>
+					<option value="cd.country">MOD_TROMBINOSCOPE_VALUE_COUNTRY</option>
+					<option value="cd.misc">MOD_TROMBINOSCOPE_VALUE_MISC</option>
+				</field>
+				<field name="field3" type="list" default="none" 
+					label="MOD_TROMBINOSCOPE_FIELD_FIELD3_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_FIELD3_DESC">
+					<option value="none">MOD_TROMBINOSCOPE_VALUE_NONE</option>
+					<option value="empty">MOD_TROMBINOSCOPE_VALUE_EMPTY</option>
+					<option value="cd.con_position">MOD_TROMBINOSCOPE_VALUE_POSITION</option>
+					<option value="cd.telephone">MOD_TROMBINOSCOPE_VALUE_TELEPHONE</option>
+					<option value="cd.mobile">MOD_TROMBINOSCOPE_VALUE_MOBILE</option>
+					<option value="cd.fax">MOD_TROMBINOSCOPE_VALUE_FAX</option>
+					<option value="cd.email_to">MOD_TROMBINOSCOPE_VALUE_EMAIL</option>
+					<option value="cd.webpage">MOD_TROMBINOSCOPE_VALUE_WEBPAGE</option>
+					<option value="cd.address">MOD_TROMBINOSCOPE_VALUE_ADDRESS</option>
+					<option value="cd.suburb">MOD_TROMBINOSCOPE_VALUE_SUBURB</option>
+					<option value="cd.state">MOD_TROMBINOSCOPE_VALUE_STATE</option>
+					<option value="formattedaddress">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS</option>
+					<option value="cd.country">MOD_TROMBINOSCOPE_VALUE_COUNTRY</option>
+					<option value="cd.misc">MOD_TROMBINOSCOPE_VALUE_MISC</option>
+				</field>
+				<field name="field4" type="list" default="none" 
+					label="MOD_TROMBINOSCOPE_FIELD_FIELD4_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_FIELD4_DESC">
+					<option value="none">MOD_TROMBINOSCOPE_VALUE_NONE</option>
+					<option value="empty">MOD_TROMBINOSCOPE_VALUE_EMPTY</option>
+					<option value="cd.con_position">MOD_TROMBINOSCOPE_VALUE_POSITION</option>
+					<option value="cd.telephone">MOD_TROMBINOSCOPE_VALUE_TELEPHONE</option>
+					<option value="cd.mobile">MOD_TROMBINOSCOPE_VALUE_MOBILE</option>
+					<option value="cd.fax">MOD_TROMBINOSCOPE_VALUE_FAX</option>
+					<option value="cd.email_to">MOD_TROMBINOSCOPE_VALUE_EMAIL</option>
+					<option value="cd.webpage">MOD_TROMBINOSCOPE_VALUE_WEBPAGE</option>
+					<option value="cd.address">MOD_TROMBINOSCOPE_VALUE_ADDRESS</option>
+					<option value="cd.suburb">MOD_TROMBINOSCOPE_VALUE_SUBURB</option>
+					<option value="cd.state">MOD_TROMBINOSCOPE_VALUE_STATE</option>
+					<option value="formattedaddress">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS</option>
+					<option value="cd.country">MOD_TROMBINOSCOPE_VALUE_COUNTRY</option>
+					<option value="cd.misc">MOD_TROMBINOSCOPE_VALUE_MISC</option>
+				</field>
+				<field name="field5" type="list" default="none" 
+					label="MOD_TROMBINOSCOPE_FIELD_FIELD5_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_FIELD5_DESC">
+					<option value="none">MOD_TROMBINOSCOPE_VALUE_NONE</option>
+					<option value="empty">MOD_TROMBINOSCOPE_VALUE_EMPTY</option>
+					<option value="cd.con_position">MOD_TROMBINOSCOPE_VALUE_POSITION</option>
+					<option value="cd.telephone">MOD_TROMBINOSCOPE_VALUE_TELEPHONE</option>
+					<option value="cd.mobile">MOD_TROMBINOSCOPE_VALUE_MOBILE</option>
+					<option value="cd.fax">MOD_TROMBINOSCOPE_VALUE_FAX</option>
+					<option value="cd.email_to">MOD_TROMBINOSCOPE_VALUE_EMAIL</option>
+					<option value="cd.webpage">MOD_TROMBINOSCOPE_VALUE_WEBPAGE</option>
+					<option value="cd.address">MOD_TROMBINOSCOPE_VALUE_ADDRESS</option>
+					<option value="cd.suburb">MOD_TROMBINOSCOPE_VALUE_SUBURB</option>
+					<option value="cd.state">MOD_TROMBINOSCOPE_VALUE_STATE</option>
+					<option value="formattedaddress">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS</option>
+					<option value="cd.country">MOD_TROMBINOSCOPE_VALUE_COUNTRY</option>
+					<option value="cd.misc">MOD_TROMBINOSCOPE_VALUE_MISC</option>
+				</field>								
+				<field name="address_format" type="list" default="ssz" 
+					label="MOD_TROMBINOSCOPE_FIELD_ADDRESSFORMAT_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_ADDRESSFORMAT_DESC">					
+					<option value="ssz">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS_SSZ</option>
+					<option value="zss">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS_ZSS</option>
+					<option value="zs">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS_ZS</option>
+					<option value="sz">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS_SZ</option>
+					<option value="ss">MOD_TROMBINOSCOPE_VALUE_FORMATTEDADDRESS_SS</option>
+				</field>								
+                <field name="keepspace" type="radio" default="1" class="btn-group" 
+					label="MOD_TROMBINOSCOPE_FIELD_KEEPSPACE_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_KEEPSPACE_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="linktocontact" type="list" default="standard" 
+					label="MOD_TROMBINOSCOPE_FIELD_LINKTOCONTACT_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_LINKTOCONTACT_DESC">
+					<option value="none">MOD_TROMBINOSCOPE_VALUE_LINKTOCONTACT_NONE</option>
+                    <option value="standard">MOD_TROMBINOSCOPE_VALUE_LINKTOCONTACT_STANDARD</option>
+                    <option value="popup">MOD_TROMBINOSCOPE_VALUE_LINKTOCONTACT_POPUP</option>
+                </field>
+                
+                <field name="popup_x" type="text" default="600" 
+					label="MOD_TROMBINOSCOPE_FIELD_POPUPX_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_POPUPX_DESC" />
+				<field name="popup_y" type="text" default="500" 
+					label="MOD_TROMBINOSCOPE_FIELD_POPUPY_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_POPUPY_DESC" />
+					
+				<field name="link" type="text" default="" 
+					label="MOD_TROMBINOSCOPE_FIELD_LINK_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_LINK_DESC" />
+				<!-- field name="menulink" type="text" default="" 
+					label="MOD_TROMBINOSCOPE_FIELD_MENULINK_LABEL" 
+					description="MOD_TROMBINOSCOPE_FIELD_MENULINK_DESC" /> -->
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" 
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" 
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL" 
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

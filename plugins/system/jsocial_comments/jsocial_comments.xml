@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="system" method="upgrade">
+	<name>plg_system_jsocial_comments</name>
+	<author>PloPixel</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>Copyright (C) 2011 PloPixel. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@plopixel.com</authorEmail>
+	<authorUrl>www.plopixel.com</authorUrl>
+	<version>2.3</version>
+	<description>PLG_SYSTEM_JSOCIAL_COMMENTS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="jsocial_comments">jsocial_comments.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>libs</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_jsocial_comments.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_jsocial_comments.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<!-- Start Basic Params -->
+			<fieldset name="basic">
+				<field name="color_scheme" type="radio" default="0" description="PLG_SYSTEM_JSOCIAL_COMMENTS_COLOR_SCHEME_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_COLOR_SCHEME">
+					<option value="0">PLG_SYSTEM_JSOCIAL_COMMENTS_COLOR_SCHEME_LIGHT</option>
+					<option value="1">PLG_SYSTEM_JSOCIAL_COMMENTS_COLOR_SCHEME_DARK</option>
+				</field>
+				<field name="default_image" type="radio" default="0" description="PLG_SYSTEM_JSOCIAL_COMMENTS_DEFAULT_IMG_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_DEFAULT_IMG">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="article_image" type="text" default="plugins/system/jsocial_comments/assets/no_image.jpg" description="PLG_SYSTEM_JSOCIAL_COMMENTS_NO_IMG_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_NO_IMG"/>
+			</fieldset>
+			<!-- End Basic Params -->
+
+			<!-- Start Facebook Params -->
+			<fieldset name="plg_system_jsocial_comments_facebook">
+				<field name="fb_userid" type="text" description="PLG_SYSTEM_JSOCIAL_COMMENTS_FB_USERID_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_FB_USERID"/>
+				<field name="fb_appid" type="text" description="PLG_SYSTEM_JSOCIAL_COMMENTS_FB_APPID_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_FB_APPID"/>
+				<field name="alt_author" type="text" description="PLG_SYSTEM_JSOCIAL_COMMENTS_ALT_AUTHOR_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_ALT_AUTHOR"/>
+				<field name="post_count" type="text" default="5" description="PLG_SYSTEM_JSOCIAL_COMMENTS_POST_COUNT_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_POST_COUNT"/>
+				<field name="object_type" type="list" default="website" description="PLG_SYSTEM_JSOCIAL_COMMENTS_OBJECT_TYPE_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_OBJECT_TYPE">
+					<option value="activity">activity</option>
+					<option value="actor">actor</option>
+					<option value="album">album</option>
+					<option value="article">article</option>
+					<option value="athlete">athlete</option>
+					<option value="author">author</option>
+					<option value="band">band</option>
+					<option value="bar">bar</option>
+					<option value="blog">blog</option>
+					<option value="book">book</option>
+					<option value="cafe">cafe</option>
+					<option value="cause">cause</option>
+					<option value="city">city</option>
+					<option value="company">company</option>
+					<option value="country">country</option>
+					<option value="director">director</option>
+					<option value="drink">drink</option>
+					<option value="food">food</option>
+					<option value="game">game</option>
+					<option value="government">government</option>
+					<option value="hotel">hotel</option>
+					<option value="landmark">landmark</option>
+					<option value="movie">movie</option>
+					<option value="musician">musician</option>
+					<option value="non_profit">non_profit</option>
+					<option value="politician">politician</option>
+					<option value="product">product</option>
+					<option value="public_figure">public_figure</option>
+					<option value="restaurant">restaurant</option>
+					<option value="school">school</option>
+					<option value="song">song</option>
+					<option value="sport">sport</option>
+					<option value="sports_league">sports_league</option>
+					<option value="sports_team">sports_team</option>
+					<option value="state_province">state_province</option>
+					<option value="tv_show">tv_show</option>
+					<option value="university">university</option>
+					<option value="website">website</option>
+				</field>
+			</fieldset>
+			<!-- End Facebook Params -->
+
+			<!-- Start Advanced params -->
+			<fieldset name="advanced">
+				<field name="auto_language" type="radio" default="1" description="PLG_SYSTEM_JSOCIAL_COMMENTS_AUTO_LANGUAGE_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_AUTO_LANGUAGE">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="language_tag" type="text" default="en_GB" description="PLG_SYSTEM_JSOCIAL_COMMENTS_LANGUAGE_TAG_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_LANGUAGE_TAG"/>
+				<field name="correct_language" type="radio" default="1" description="PLG_SYSTEM_JSOCIAL_COMMENTS_CORRECT_LANGUAGE_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_CORRECT_LANGUAGE">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="comment_cache" type="text" default="600" description="PLG_SYSTEM_JSOCIAL_COMMENTS_COMMENTS_CACHE_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_COMMENTS_CACHE"/>
+				<field name="spacer0" type="spacer" hr="true"/>
+				<field name="show_debug" type="radio" default="1" description="PLG_SYSTEM_JSOCIAL_COMMENTS_DEBUG_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_DEBUG">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="w3c_validator" type="radio" default="1" description="PLG_SYSTEM_JSOCIAL_COMMENTS_W3C_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_W3C">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="facebook_js" type="radio" default="0" description="PLG_SYSTEM_JSOCIAL_COMMENTS_JS_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_JS">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="facebook_div" type="radio" default="0" description="PLG_SYSTEM_JSOCIAL_COMMENTS_DIV_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_DIV">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="check_meta" type="radio" default="0" description="PLG_SYSTEM_JSOCIAL_COMMENTS_META_DESCRIPTION" label="PLG_SYSTEM_JSOCIAL_COMMENTS_META">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+
+			</fieldset>
+			<!-- End Advanced params -->
+
+		</fields>
+	</config>
+</extension>

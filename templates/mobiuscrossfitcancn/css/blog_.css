@@ -1,0 +1,7 @@
+body.blog .blog-featured h2{border-bottom: 5px solid #68a603; margin-bottom: 20px;padding-bottom: 15px;}
+body.blog .blog-featured h2 a{font-size: 35px; font-family: 'Oswald', sans-serif;color: #030303;margin: 0; text-decoration: none;}
+body.blog .blog-featured p{font-family: 'Helvetica'; font-size: 15px;   }
+
+body.blog .item-page h2{border-bottom: 5px solid #68a603; margin-bottom: 20px;padding-bottom: 15px;}
+body.blog .item-page h2 a{font-size: 35px; font-family: 'Oswald', sans-serif;color: #030303;margin: 0; text-decoration: none;}
+body.blog .item-page p{font-family: 'Helvetica'; font-size: 15px;   }

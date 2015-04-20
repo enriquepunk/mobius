@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	line-height: 1;
+	text-align: left;
+}
+*{ 
+	font-family:Arial, Helvetica, sans-serif;
+ }
+*:focus { 
+	outline: none;
+}
+
+div{
+	float:left;
+}
+body{
+  
+  /*background-color:#5c6063;*/ 
+  margin: 0 auto;  
+}
+img{
+	border:0;
+}
+#derecho{
+    width:100px;
+    height:100%;
+    background-image: url(http://financitconsultores.com/images/COSTADO_DERECHO.jpg);
+}
+#izquierdo{
+    /*height:100%;
+    width:100px;
+    background-image: url(http://financitconsultores.com/images/COSTADO_IZQUIERDO.jpg);*/
+   
+}
+#todo{
+	width:920px;
+}
+#principal{
+    margin:0;
+    width:920px;
+    height: 1410px;
+    float:left;
+    background-color: #f9f9f9;
+}
+#header{
+    width: 920px;
+	height:178px;
+}
+#main{
+    width:920px;
+    background-color: #f9f9f9;
+	height:1232px;
+}
+#menu div a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#menu img{
+	float:left;
+}
+#menu-home{
+	width:87px;
+	height:48px;
+	background-image:url(http://www.financitconsultores.com/images/home.png);
+}
+#menu-home:hover{
+	background-image:url(http://www.financitconsultores.com/images/home_over.png);
+}
+#menu-nosotros{
+	background-image:url(http://www.financitconsultores.com/images/servicios.png);
+	width:195px;
+	height:48px;
+}
+#menu-nosotros:hover{
+	background-image:url(http://www.financitconsultores.com/images/servicios_over.png);
+}
+#menu-galeria{
+	background-image:url(images/galerias_over.png);
+	width:214px;
+	height:48px;
+}
+#menu-galeria-top{
+	background-image:url(http://www.financitconsultores.com/images/galerias.png);
+	width:214px !important;
+	height:48px !important;
+}
+#menu-galeria-top:hover{
+	background-image:url(http://www.financitconsultores.com/images/galerias_over.png);
+	cursor:pointer;
+}
+#menu-galeria div{
+	width:235px;
+	height:26px;
+}
+#menu-galeria div a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#menu-biodisel{
+	background-image:url(http://financitconsultores.com/images/biodiesel.png);
+	margin-top:-8px;
+}
+#menu-biodisel:hover{
+	background-image:url(http://financitconsultores.com/images/biodiesel_over.png);
+}
+#menu-ecocentro{
+	background-image:url(http://financitconsultores.com/images/ecocentro.png);
+}
+#menu-ecocentro:hover{
+	background-image:url(http://financitconsultores.com/images/ecocentro_over.png);
+}
+#menu-empresa{
+	background-image:url(http://financitconsultores.com/images/empresa.png);
+}
+#menu-empresa:hover{
+	background-image:url(http://financitconsultores.com/images/empresa_over.png);
+}
+.vertical{
+	z-index:1;
+	position:relative;
+}
+#menu-contacto{
+	background-image:url(http://www.financitconsultores.com/images/contacto.png);
+	width:120px;
+	height:48px;
+}
+#menu-contacto:hover{
+	background-image:url(http://www.financitconsultores.com/images/contacto_over.png);
+}
+#menu-blog{
+	background-image:url(http://www.financitconsultores.com/images/blog.png);
+	width:254px;
+	height:48px;
+}
+#menu-blog:hover{
+	background-image:url(http://www.financitconsultores.com/images/blog_over.png);
+}
+#contenido{
+    width:625px;
+	height:922px;
+    float:left;
+   	font-size: 14px;
+    padding-left: 20px;
+    padding-top:10px;
+    color:#757575;
+}
+#contenido p{
+	width:560px;
+	margin-top:15px;
+	line-height:1.2;
+}
+#contenido .bullet{
+    height:17px;
+    width:510px;
+    margin-top:10px;
+	margin-left:30px;
+}
+.first{
+    padding-left: 10px;
+    margin: 0;
+}
+#mision,#vision,#valores{
+    font-size: 13px;
+    display: none;
+}
+.list{
+    margin-top:10px;
+}
+.linea{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#footer{
+    background-image:url(http://www.financitconsultores.com/images/footer.png);
+    height: 72px;
+    width: 920px;
+}
+#gadgets{
+        margin-top:10px;
+		width:243px;
+        background-color:#eef1f5;
+		margin-left:20px;
+		height:860px;
+}
+#gadgets a{
+	text-decoration:none;
+	color:#757575;
+}
+#gadgets a:hover{
+	text-decoration:underline;
+}
+#gadgets iframe{
+	padding-left:25px;
+}
+#last iframe{
+	height:800px !important;
+}
+#todo{
+	
+/*efecto de sombra a la derecha	
+	box-shadow: 5px 5px 5px #999;
+	-webkit-box-shadow: 5px 5px 5px #999;
+  	-moz-box-shadow: 5px 5px 5px #999;
+  	filter:
+	progid:DXImageTransform.Microsoft.Shadow(color=#999999, direction=135, strength=5);*/
+
+}
+/*---------------Nuestros servicios----------------*/
+#evaluacion, #financiamiento, #banca-inversion, #asesoria{
+	padding-top:15px;
+	font-size:13px;
+}
+#accordion{
+	width:480px;
+}
+#asesoria li{
+	margin-left:30px;
+	padding-bottom:2px;
+}
+#accordion h3 img{
+	margin-top:10px;
+}
+/*--------------------------Conatacto------------------------*/
+#formulario-lateral{
+	width:300px;
+	height:190px;
+}
+.campo-left{
+	width:280px;
+	height:30px;
+	margin-bottom:10px;
+}
+.campo-left h3{
+	width:75px;
+	height:15px;
+	float:left;
+	margin-top:5px;
+}
+.campo-left input[type="text"]{
+	width:198px;
+	height:20px;
+	float:left;
+}
+.campo-left select{
+	float:right;
+	margin-left:10px;
+}
+#formulario-bottom{
+	width:475px;
+	height:420px;
+	margin-top:10px;
+}
+.campo-bottom{
+	width:475px;
+	height:30px;
+	margin-bottom:10px;
+}
+.campo-bottom h3{
+	width:120px;
+	height:15px;
+	float:left;
+	margin-top:5px;
+}
+.campo-bottom input[type="text"]{
+	width:335px;
+	height:20px;
+	float:right;
+}
+.campo-check{
+	width:475px;
+	height:140px;
+	margin-top:5px;
+}
+#titulo-check{
+	width:140px;
+	height:135px;
+}
+.texto-check{
+	float:right;
+	width:280px;
+	height:20px;
+	padding-left:3px;
+	margin-bottom:5px;
+}
+input[type="checkbox"]{
+	float:right;
+}
+.texto-check h3{
+	width:100%;
+}
+.comentarios{
+	width:490px;
+	height:125px;
+	margin-top:15px;
+}
+#titulo-cometarios{
+	height:135px;
+	width:100px;
+}
+.btn-enviar{
+	opacity:0.7;
+}
+.btn-enviar:hover{
+	opacity: 1;
+}
+#respuesta{
+	width:300px;
+	height:120px;
+	margin:20px;
+	font-size:16px;
+	color:#F00;
+}

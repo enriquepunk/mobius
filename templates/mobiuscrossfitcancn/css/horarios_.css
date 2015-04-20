@@ -1,0 +1,20 @@
+body.horarios .category-content{height: auto;}
+body.horarios .separador{margin: 10px 0 10px 0;}
+body.horarios .articulos{width: 100%;border: none;height: auto;overflow: hidden;}
+body.horarios .articulos p{text-align: center;}
+/*body.horarios .articulos .horarios h2{font-size: 35px; font-family: 'Oswald', sans-serif;color: #030303;margin: 0;padding-left: 10px;}*/
+body.horarios .horarios_eventos{width: 890px;height: auto;float: left;padding: 0 40px;background-color: white;}
+body.horarios #pizarron{width: 100%;min-height: 535px; background-color: #131313;margin-top: 15px;float: left;color: white;font-family: 'Oswald', sans-serif;font-size: 24px;}
+body.horarios .color_negro{width: 100%; height: 15px;background: #131313;float: left;}
+body.horarios #pizarron table{width: 100%;text-align: center;}
+body.horarios .moduletable{float: left; width: 100%;}
+body.horarios .moduletable h3{display: none;}
+body.horarios #pizarron #header_table{background-color: #529c1d;padding: 15px 35px 0 35px;float: left;width: 820px;}
+body.horarios #pizarron .trombinoscope_107{width: 100% !important; float: left;height: 500px;}
+body.horarios #sig_next{ height: 51px;float: left;padding-left: 630px;margin-top: 15px;width: 260px;}
+body.horarios #sig_next #prev,body.horarios #sig_next #next{width: 120px;height: 51px;cursor: pointer;}
+body.horarios #sig_next #prev{background-image: url('../images/webcuts/anterior.png');float: left}
+body.horarios #sig_next #next{background-image: url('../images/webcuts/proximo.png');float: right;margin-left: 10px;}
+.item-group{width: 100%!important}
+.trombinoscope_107 {height: 450px!important}
+body.horarios .trombinoscope_122{display: none;}

@@ -1,0 +1,12 @@
+body.coaches .category-content{height: auto;}
+body.coaches .coaches_info{width: 840px;background-color: #529c1d;float: left;padding: 15px 10px 12px 10px;margin: 0 15px 12px 15px;}
+body.coaches .coaches_info_black{background-color: #131314 !important;}
+body.coaches .articulos{width: 100%;border: none;height: auto;}
+/*body.coaches .articulos .item-pagecoaches h2{font-size: 35px; font-family: 'Oswald', sans-serif;color: #030303;margin: 0;padding-left: 10px;}*/
+body.coaches .separador{margin: 10px 0 10px 0;}
+
+body.coaches .coaches_info .left{width: 479px;float: left;padding-left: 20px; padding-top: 20px;}
+body.coaches .coaches_info .left h1{color: #040100;font-size: 35px;border-bottom: 3px solid white;width: 100%;float: left;padding-bottom: 10px;font-family: 'Oswald', sans-serif;}
+body.coaches .coaches_info .left ul{float: left;padding: 15px 0 0;}
+body.coaches .coaches_info .left ul li{list-style: none;color: white;font-size: 16px;width: 100%; float: left;font-family: 'Oswald', sans-serif;line-height: 20px;}
+body.coaches .coaches_info .right{float: right;}

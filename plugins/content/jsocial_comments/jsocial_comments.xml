@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content" method="upgrade">
+	<name>plg_content_jsocial_comments</name>
+	<author>PloPixel</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>Copyright (C) 2011 PloPixel. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@plopixel.com</authorEmail>
+	<authorUrl>www.plopixel.com</authorUrl>
+	<version>2.3</version>
+	<description>PLG_CONTENT_JSOCIAL_COMMENTS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="jsocial_comments">jsocial_comments.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_jsocial_comments.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_jsocial_comments.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<!-- Start Basic params -->
+			<fieldset name="basic">
+				<field name="catid" type="category" extension="com_content" multiple="true" size="10" default="" description="PLG_CONTENT_JSOCIAL_COMMENTS_CATEGORY_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_CATEGORY"/>
+			</fieldset>
+			<!-- End Start Basic params -->
+
+			<!-- Start Front View -->
+			<fieldset name="plg_content_jsocial_comments_share_bar_front">
+				<field name="bar_featured" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BAR_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BAR">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="button_layout_f" type="list" default="0" description="PLG_CONTENT_JSOCIAL_COMMENTS_BUTTON_LAYOUT_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_BUTTON_LAYOUT">
+					<option value="8">Big (Top)</option>
+					<option value="7">Big (Bottom)</option>
+					<option value="6">Big (Left)</option>
+					<option value="5">Big (Right)</option>
+					<option value="4">Small (Top)</option>
+					<option value="3">Small (Bottom)</option>
+					<option value="2">Small L-FB (Top)</option>
+					<option value="1">Small L-FB (Bottom)</option>
+				</field>
+				<field name="spacer1" type="spacer" hr="true"/>
+				<field name="show_linkedin_f" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_LINKEDIN_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_LINKEDIN">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer2" type="spacer" hr="true"/>
+				<field name="show_facebook_f" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_FACEBOOK_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_FACEBOOK">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer3" type="spacer" hr="true"/>
+				<field name="show_buzz_f" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BUZZ_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BUZZ">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="show_plusone_f" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_PLUSONE_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_PLUSONE">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer4" type="spacer" hr="true"/>
+				<field name="show_twitter_f" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_TWITTER_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_TWITTER">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer5" type="spacer" hr="true"/>
+				<field name="show_count_f" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENTS_COUNT_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENTS_COUNT">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+			</fieldset>
+			<!-- End Front View -->
+
+			<!-- Start Blog View -->
+			<fieldset name="plg_content_jsocial_comments_share_bar_blog">
+				<field name="bar_blog" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BAR_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BAR">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="button_layout_b" type="list" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_BUTTON_LAYOUT_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_BUTTON_LAYOUT">
+					<option value="8">Big (Top)</option>
+					<option value="7">Big (Bottom)</option>
+					<option value="6">Big (Left)</option>
+					<option value="5">Big (Right)</option>
+					<option value="4">Small (Top)</option>
+					<option value="3">Small (Bottom)</option>
+					<option value="2">Small L-FB (Top)</option>
+					<option value="1">Small L-FB (Bottom)</option>
+				</field>
+				<field name="spacer6" type="spacer" hr="true"/>
+				<field name="show_linkedin_b" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_LINKEDIN_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_LINKEDIN">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer7" type="spacer" hr="true"/>
+				<field name="show_facebook_b" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_FACEBOOK_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_FACEBOOK">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer8" type="spacer" hr="true"/>
+				<field name="show_buzz_b" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BUZZ_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BUZZ">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="show_plusone_b" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_PLUSONE_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_PLUSONE">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer9" type="spacer" hr="true"/>
+				<field name="show_twitter_b" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_TWITTER_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_TWITTER">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer10" type="spacer" hr="true"/>
+				<field name="show_count_b" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENTS_COUNT_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENTS_COUNT">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+			</fieldset>
+			<!-- End Blog View -->
+
+			<!-- Start Article View -->
+			<fieldset name="plg_content_jsocial_comments_share_bar_article">
+				<field name="bar_article" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BAR_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BAR">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="button_layout_a" type="list" default="2" description="PLG_CONTENT_JSOCIAL_COMMENTS_BUTTON_LAYOUT_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_BUTTON_LAYOUT">
+					<option value="8">Big (Top)</option>
+					<option value="7">Big (Bottom)</option>
+					<option value="6">Big (Left)</option>
+					<option value="5">Big (Right)</option>
+					<option value="4">Small (Top)</option>
+					<option value="3">Small (Bottom)</option>
+					<option value="2">Small L-FB (Top)</option>
+					<option value="1">Small L-FB (Bottom)</option>
+				</field>
+				<field name="spacer11" type="spacer" hr="true"/>
+				<field name="show_linkedin_a" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_LINKEDIN_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_LINKEDIN">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer12" type="spacer" hr="true"/>
+				<field name="show_facebook_a" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_FACEBOOK_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_FACEBOOK">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer13" type="spacer" hr="true"/>
+				<field name="show_buzz_a" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BUZZ_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_BUZZ">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="show_plusone_a" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_PLUSONE_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_PLUSONE">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer14" type="spacer" hr="true"/>
+				<field name="show_twitter_a" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_TWITTER_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHARE_TWITTER">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="spacer15" type="spacer" hr="true"/>
+				<field name="show_count_a" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENTS_COUNT_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENTS_COUNT">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+			</fieldset>
+			<!-- End Article View -->
+
+			<!-- Start Facebook General Params -->
+			<fieldset name="plg_content_jsocial_comments_facebook">
+				<field name="comments" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_ON_DESC" label="PLG_CONTENT_JSOCIAL_COMMENTS_ON">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="comment_width" type="text" default="500" description="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENT_WIDTH_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENT_WIDTH"/>
+				<field name="detect_mobile" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENT_MOBILE_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENT_MOBILE">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="iphone_width" type="text" default="500" description="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENT_IPHONE_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENT_IPHONE"/>
+				<field name="general_width" type="text" default="300" description="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENT_GENERAL_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_COMMENT_GENERAL"/>
+			</fieldset>
+			<!-- End Facebook General Params -->
+
+			<!-- Start Facebook share params -->
+			<fieldset name="plg_content_jsocial_comments_facebook_share">
+				<field name="facebook_send" type="list" default="true" description="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_SEND_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_SEND">
+					<option value="true">JYes</option>
+					<option value="false">JNo</option>
+				</field>
+				<field name="facebook_width" type="text" default="500" description="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_WIDTH_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_WIDTH"/>
+				<field name="facebook_faces" type="list" default="false" description="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_FACES_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_FACES">
+					<option value="true">JYes</option>
+					<option value="false">JNo</option>
+				</field>
+				<field name="facebook_verb" type="list" default="0" description="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_VERB_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_VERB">
+					<option value="0">like</option>
+					<option value="recommend">recommend</option>
+				</field>
+				<field name="facebook_font" type="list" default="0" description="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_FONT_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_FACEBOOK_FONT">
+					<option value="0">default</option>
+					<option value="arial">arial</option>
+					<option value="lucida grande">lucida grande</option>
+					<option value="segoe ui">segoe ui</option>
+					<option value="tahoma">tahoma</option>
+					<option value="trebuchet ms">trebuchet ms</option>
+					<option value="verdana">verdana</option>
+				</field>
+			</fieldset>
+			<!-- End Facebook share params -->
+
+			<!-- Start Twitter share params -->
+			<fieldset name="plg_content_jsocial_comments_twitter_share">
+				<field name="twitter_via" type="text" default="" description="PLG_CONTENT_JSOCIAL_COMMENTS_TWITTER_VIA_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_TWITTER_VIA"/>
+				<field name="twitter_related" type="text" default="" description="PLG_CONTENT_JSOCIAL_COMMENTS_TWITTER_RELATED_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_TWITTER_RELATED"/>
+				<field name="twitter_related_desc" type="text" default="" description="PLG_CONTENT_JSOCIAL_COMMENTS_TWITTER_RELATED_DESC_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_TWITTER_RELATED_DESC"/>
+			</fieldset>
+			<!-- End Twitter share params -->
+
+			<!-- Start Advanced params -->
+			<fieldset name="advanced">
+				<field name="show_feeds" type="list" default="2" description="PLG_CONTENT_JSOCIAL_COMMENTS_SHOW_FEED_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_SHOW_FEED">
+					<option value="2">PLG_CONTENT_JSOCIAL_COMMENTS_SHOW_FEED_ALWAYS</option>
+					<option value="1">PLG_CONTENT_JSOCIAL_COMMENTS_SHOW_FEED_ROBOTS</option>
+					<option value="0">PLG_CONTENT_JSOCIAL_COMMENTS_SHOW_FEED_NEVER</option>
+				</field>
+				<field name="show_consid" type="radio" default="1" description="PLG_CONTENT_JSOCIAL_COMMENTS_CREDITS_DESCRIPTION" label="PLG_CONTENT_JSOCIAL_COMMENTS_CREDITS">
+					<option value="1">JYes</option>
+					<option value="0">JNo</option>
+				</field>
+			</fieldset>
+			<!-- End Advanced params -->
+
+		</fields>
+	</config>
+</extension>

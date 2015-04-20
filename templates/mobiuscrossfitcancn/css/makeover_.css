@@ -1,0 +1,28 @@
+body.makeover{font-family: 'Oswald', sans-serif;}
+body.makeover .trombinoscope_107{display: none;}
+body.makeover .category-content{height: auto;}
+body.makeover .articulos{width: 100%;border: none;height: auto;}
+body.makeover .articulos .item-page{height: auto;}
+body.makeover .articulos .item-page .subsecciones{float: left;margin: 0 15px 12px;padding: 15px 10px 12px;width: 840px;}
+body.makeover .articulos .item-page .subsecciones .que_es_mmakeover{float: left; width: 48%;}
+body.makeover .articulos .item-page .subsecciones .que_es_mmakeover h3{width: 100%; margin-bottom: 12px;padding: 0;}
+body.makeover .articulos .item-page .subsecciones .que_es_mmakeover p{font-size: 16px; font-family: 'Oswald';}
+body.makeover .articulos .item-page .subsecciones .que_es_mmakeover a{text-decoration: none;color:#5c9603; }
+
+body.makeover .articulos .item-page .subsecciones #formulario_img{float: right;}
+
+body.makeover .articulos .item-page .subsecciones #formulario{width: 43%; float: right;background-color: #1e1e1e;padding: 10px 25px;}
+body.makeover .articulos .item-page .subsecciones #formulario h1{font-family: 'Oswald', sans-serif;font-size: 22px;width: 100%;text-align: center;color: #5c9603;margin-bottom: 12px;}
+body.makeover .articulos .item-page .subsecciones #formulario .divInputs{width: 100%;float: left;margin-bottom: 13px;}
+body.makeover .articulos .item-page .subsecciones #formulario .divInputs label{width: 26%;float: left;color: white;font-size: 15px;}
+body.makeover .articulos .item-page .subsecciones #formulario .divInputs .inputbox{width: 70%;float: right;}
+body.makeover .articulos .item-page .subsecciones #formulario .divInputs #comments{float: right;height: 150px;resize: none;width: 70%;}
+body.makeover .articulos .item-page .subsecciones #formulario .divInputs #enviar_makeover{width: 80px; height: 29px;float: right;}
+
+body.makeover .articulos .item-page .subsecciones h3{width: 100%;margin-bottom: 10px;padding: 0;}
+body.makeover .articulos .item-page .subsecciones p{font-size: 16px;}
+body.makeover .articulos .item-page .subsecciones .item-makeover .imagenover{width: 291px; height: 291px; float: left;}
+body.makeover .articulos .item-page .subsecciones .item-makeover .datos{float: left;margin-left: 25px;width: 485px;}
+body.makeover .articulos .item-page .subsecciones .item-makeover .datos .items_mo{width: 100%;float: left;}
+body.makeover .articulos .item-page .subsecciones .item-makeover .datos .items_mo h1{color: #5C9603;float: left;font-size: 20px;width: auto;margin-right: 10px;}
+body.makeover .articulos .item-page .subsecciones .item-makeover .datos .items_mo .neg{color: black !important;font-weight: normal !important;}

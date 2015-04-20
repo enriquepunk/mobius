@@ -1,0 +1,21 @@
+[17-Jul-2013 10:32:57 America/Phoenix] Invalid HTTP request method.
+[17-Jul-2013 10:35:50 America/Phoenix] cURL error: [77] Problem with the SSL CA cert (path? access rights?)
+[17-Jul-2013 10:45:54 America/Phoenix] cURL error: [77] Problem with the SSL CA cert (path? access rights?)
+[17-Jul-2013 10:48:23 America/Phoenix] Invalid HTTP request method.
+[17-Jul-2013 10:48:27 America/Phoenix] Invalid HTTP request method.
+[17-Jul-2013 10:48:55 America/Phoenix] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/content/82/11020882/html/mobius/templates/mobiuscrossfitcancn/paypalipn.php:2) in /home/content/82/11020882/html/mobius/templates/mobiuscrossfitcancn/ipnlistener.php on line 307
+[17-Jul-2013 10:48:55 America/Phoenix] Invalid HTTP request method.
+[17-Jul-2013 10:55:11 America/Phoenix] Invalid HTTP request method.
+[17-Jul-2013 10:56:19 America/Phoenix] cURL error: [77] Problem with the SSL CA cert (path? access rights?)
+[17-Jul-2013 10:57:11 America/Phoenix] cURL error: [77] Problem with the SSL CA cert (path? access rights?)
+[17-Jul-2013 10:58:50 America/Phoenix] cURL error: [77] Problem with the SSL CA cert (path? access rights?)
+[17-Jul-2013 11:00:57 America/Phoenix] cURL error: [77] Problem with the SSL CA cert (path? access rights?)
+[17-Jul-2013 11:02:37 America/Phoenix] cURL error: [77] Problem with the SSL CA cert (path? access rights?)
+[17-Jul-2013 11:04:24 America/Phoenix] cURL error: [77] Problem with the SSL CA cert (path? access rights?)
+[17-Jul-2013 11:06:11 America/Phoenix] cURL error: [77] Problem with the SSL CA cert (path? access rights?)
+[17-Jul-2013 11:09:26 America/Phoenix] Invalid response status: 302
+[17-Jul-2013 11:18:18 America/Phoenix] Invalid response status: 302
+[17-Jul-2013 12:15:16 America/Phoenix] Invalid response status: 302
+[17-Jul-2013 12:18:49 America/Phoenix] Invalid response status: 302
+[17-Jul-2013 12:23:42 America/Phoenix] Invalid response status: 302
+[17-Jul-2013 12:25:37 America/Phoenix] Invalid response status: 302

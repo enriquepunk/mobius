@@ -1,0 +1,6 @@
+
+body.wod .right_content{padding-left: 20px;width: 305px;height: auto;float: left;}
+body.wod .right_content .items{width: 303px; float: left;height: auto;}
+body.wod .items-leading h2{font-size: 35px; font-family: 'Oswald', sans-serif;color: #030303;margin: 0;padding-left: 10px;padding-bottom: 15px;border-bottom: 5px solid #68a603; margin-bottom: 20px;}
+body.wod .items-leading h4{font-family: 'Helvetica';font-size: 15px;font-weight: normal;}
+body.wod .right_content .items2{width: 303px; float: left;height: auto;}

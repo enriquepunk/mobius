@@ -1,0 +1,48 @@
+.jsc-debug {background-color: #f8f8f8;border: 3px solid #ddd;color: #808080;font-size: 12px;margin: 10px auto;padding: 0 5px 5px;text-align: left;width: 950px}
+.jsc-title{border-bottom: 3px solid #ddd;font-size: 16px;margin-bottom: 10px;padding: 5px 0;text-align: center;font-weight: bold;}
+.jsc-debug span{display: block;margin: 0 0 5px;padding: 0 5px;}
+.jsc-info{background-color: #ceffc9;}
+.jsc-warn{background-color: #ffc9c9;}
+.jsc-mess{background-color: #fff9d7;}
+.jsc-bar {clear: both;margin: 15px 0 10px;position: relative}
+.jsc-bar span{display: block}
+.jsc-bar.big-l{float:left;margin: 8px 8px 8px 0}
+.jsc-bar.big-r{float:right;margin: 8px 0 8px 8px}
+.jsc-bar.big-r,.jsc-bar.big-l{}
+.jsc-bar.small-t .jsc-facebook,.jsc-bar.small-b .jsc-facebook{margin-top:2px}
+.jsc-bar.small-t.large-fb .jsc-facebook,.jsc-bar.small-b.large-fb .jsc-facebook{margin:0}
+.jsc-bar.small-t span,.jsc-bar.small-b span{float: left}
+.jsc-facebook{}
+.jsc-twitter{margin-top: 2px}
+.jsc-buzz{margin: 3px 8px 0 0}
+.jsc-linkedin{margin: 2px 8px 0 0}
+.jsc-plusone{margin-top: 2px}
+.jsc-bar.big-r .jsc-plusone,.jsc-bar.big-r .jsc-linkedin,.jsc-bar.big-r .jsc-buzz,.jsc-bar.big-r .jsc-twitter,.jsc-bar.big-l .jsc-plusone,.jsc-bar.big-l .jsc-linkedin,.jsc-bar.big-l .jsc-buzz,.jsc-bar.big-l .jsc-twitter,.jsc-bar.big-r .jsc-count-big, .jsc-bar.big-l .jsc-count-big{margin: 8px 0 0 0}
+.jsc-bar.big-r .jsc-facebook,.jsc-bar.big-l .jsc-facebook{margin: 0}
+.jsc-bar.big-t .jsc-plusone,.jsc-bar.big-b .jsc-plusone,.jsc-bar.big-t .jsc-linkedin,.jsc-bar.big-b .jsc-linkedin,.jsc-bar.big-t .jsc-buzz,.jsc-bar.big-b .jsc-buzz,.jsc-bar.big-t .jsc-twitter,.jsc-bar.big-b .jsc-twitter,.jsc-bar.big-t .jsc-facebook,.jsc-bar.big-b .jsc-facebook{float: left}
+.jsc-bar.big-t .jsc-count-big, .jsc-bar.big-b .jsc-count-big{position: absolute;right: 0;z-index:2}
+.jsc-bar.big-r .jsc-facebook,.jsc-bar.big-l .jsc-facebook{margin: 0}
+.jsc-bar.big-t .jsc-plusone,.jsc-bar.big-b .jsc-plusone{margin: 5px 8px 0 0}
+.jsc-bar.big-t .jsc-linkedin,.jsc-bar.big-b .jsc-linkedin{margin: 4px 8px 0 0}
+.jsc-bar.big-t .jsc-buzz,.jsc-bar.big-b .jsc-buzz{margin: 0 8px 0 0}
+.jsc-bar.big-t .jsc-twitter,.jsc-bar.big-b .jsc-twitter{margin: 4px 8px 0 0}
+.jsc-bar.big-t .jsc-facebook,.jsc-bar.big-b .jsc-facebook{margin: 5px 0 0}
+.jsc-count-small,.jsc-count-big{font-family: arial,helvetica,sans-serif !important;}
+.jsc-count-small{position: absolute;right: 0;z-index:2}
+.jsc-small-desc{padding-left: 3px;}
+.jsc-small-fb{background: url(../images/facebook_s.png) no-repeat 0 2px;padding-left: 20px;}
+.jsc-count-big{margin: 4px 0 0;}
+.jsc-big{float: left;position: relative;}
+.jsc-big-nub{background-image: url(../images/nub_b.png);background-repeat: no-repeat;border: none;height: 7px;left: 7px;margin: 0;padding: 0;position: absolute;top: 35px;width: 6px;}
+.jsc-big-log{background: url(../images/facebook.png) no-repeat 5px 10px;height: 34px;display: inline-block !important;}
+.jsc-big .fb_comments_count{padding: 0 6px 0 26px;}
+.jsc-big-num {background: #6a6a6a;border: 1px solid #333;font-size: 18px;letter-spacing: -1px;line-height: 34px;margin-bottom: 10px;color: #ddd;text-align: center;}
+.jsc-big-but,.jsc-small-but{display: inline-block !important;padding-left: 4px;background:url(../images/button_b.png) no-repeat 0 0 !important;text-decoration: none !important;}
+.jsc-big-label,.jsc-small-label{background:url(../images/button_b.png) no-repeat 100% -20px !important;padding-right: 4px;}
+.jsc-big-text,.jsc-small-text{background:url(../images/button_b.png) repeat-x 0 -40px !important;color: #ddd !important;text-align: center;height: 20px;font-size: 11px;line-height: 20px;font-weight: bold;cursor:pointer;}
+.jsc-big-text:hover,.jsc-small-text:hover{color: #fff !important;}
+.jsc{border: 1px solid #333;border-radius: 5px 5px 5px 5px;margin-top: 15px;padding: 5px;clear:both}
+.jsc-feeds{background-color:#000;border: 1px solid #333;color:#444;border-radius:5px;font-size:8px;line-height: 10px;margin-top:10px;padding:8px;text-align:justify}
+.jsc-feeds span{background: url(../images/rob.png) no-repeat 0 0;color: #3B5998;display: block;font-size: 11px;padding: 0 0 0 22px;height: 20px;line-height: 20px}
+.jsc-feeds a,.jsc-feeds a:hover,.jsc-feeds a:visited{color:#aaa !important;text-decoration: underline !important}
+.clear{clear:both}

@@ -1,0 +1,6 @@
+body.ubicacion .category-content{height: auto;}
+body.ubicacion .articulos{width: 100%;border: none;height: auto;}
+body.ubicacion .articulos .item-page{height: auto;position: relative;}
+body.ubicacion .direccion_mobius{color: white;padding: 10px;position: absolute;background-image: url('../images/webcuts/fondo-negro-transparente.png'); right: 30px;    top: 500px;}
+body.ubicacion .direccion_mobius h1{font-family: 'Oswald', sans-serif;font-size: 24px;color: #85d514;padding-bottom: 10px;}
+body.ubicacion .direccion_mobius p{color: white;font-size: 15px;width: 100%;font-weight: bold;}
